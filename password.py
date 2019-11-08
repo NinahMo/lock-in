@@ -6,3 +6,8 @@ class Password:
         self.email = email
         self.password_number = password_number
         self.password_confirm = password_confirm
+    
+    def save_password(self):
+        Password.password_list.append(self)
+        
+# pass       

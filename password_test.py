@@ -12,3 +12,10 @@ class Testpassword(unittest.TestCase):
         self.assertEqual(self.new_password.password_number,"421145")
         self.assertEqual(self.new_password.password_confirm,"421145")   
     
+    def test_save_password(self):
+        self.new_password.save_password()
+        self.assertEqual(len(Password.password_list),1)
+
+
+if __name__ == '__main__':
+    unittest.main()
