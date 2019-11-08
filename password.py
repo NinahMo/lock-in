@@ -1,17 +1,19 @@
 class Password:
     password_list = []
-    def __init__(self,full_name,user_name,email,password_number,password_confirm):
-        self.full_name = full_name
+    def __init__(self,app_name,user_name,password_number):
+        self.app_name = app_name
         self.user_name = user_name 
-        self.email = email
         self.password_number = password_number
-        self.password_confirm = password_confirm
+      
     
     def save_password(self):
         Password.password_list.append(self)
      
     def delete_password(self):
         Password.password_list.remove(self)
-        
+    
+    @classmethod
+    def display_passwords(cls):
+        return cls.password_list    
             
 # pass       
