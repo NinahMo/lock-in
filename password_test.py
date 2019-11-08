@@ -19,8 +19,11 @@ class Testpassword(unittest.TestCase):
     def tearDown(self):
         Password.password_list = []
         
-    def 
-
+    def test_save_multiple_passwords(self):
+        self.new_password.save_password()
+        test_password = Password("Richard Ronald","Lorderonnie","rontheking45@gmail.com","421145","421145")
+        test_password.save_password()
+        self.assertEqual(len(Password.password_list),2)
 
 
 
