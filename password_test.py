@@ -16,6 +16,13 @@ class Testpassword(unittest.TestCase):
         self.new_password.save_password()
         self.assertEqual(len(Password.password_list),1)
 
+    def tearDown(self):
+        Password.password_list = []
+        
+    def 
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
