@@ -36,6 +36,7 @@ def main():
     print('\n')
     while True:
         print("Okay to begin using the app you need to first choose your option : ca - create new information for account, da - display existing accounts, ex - exit LOCK-IN")        
+        print('\n')
         short_code == input().lower()
         
         if short_code == 'ca':
