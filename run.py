@@ -34,7 +34,12 @@ def main():
         print("Okay to begin using the app you need to first choose your option : ca - create new information for account, da - display existing accounts, ex - exit LOCK-IN")        
         short_code == input().lower()
         
-        
+        if short_code == 'ca':
+            print ("Enter the name of the application:")
+            a_name = input()
+            
+            print ("Enter your username for the application:")
+            
     
     
 
