@@ -1,6 +1,6 @@
-# {LOCK-IN}
-#### {This is a simple password locker }, {9 November 2019}
-#### By **{Ronald Mwambia}**
+# LOCK-IN
+#### This is a simple password locker, 9 November 2019
+#### By **Ronald Mwambia**
 ## Description
    This is a python built app that is based on the saving of passwords.Say you want to save your account credentials for a certain app such as instagram.This system will allow you to store your information no problem.
 
@@ -20,4 +20,4 @@
     Incase of any problem please access my email which is :rontheking45@gmail.com
 ### License
 MIT.licence
-Copyright (c) 2019 **{Ronald Mwambia & Moringa School}**
+Copyright (c) 2019 **Ronald Mwambia & Moringa School**
