@@ -28,10 +28,13 @@ def main():
     print("Inorder for you to proceed you need a password.")
     password = input()
     
-    print("Welcome {full_name} to LOCK-IN the best password locker around. ")
-    
+    print("Welcome {full_name} to LOCK-IN the best password locker around.What is your command? ")
+    print('\n')
     while True:
-        print("Okay to begin using the app you need to first choose your option : ca - create new information for accounts ")
+        print("Okay to begin using the app you need to first choose your option : ca - create new information for account, da - display existing accounts, ex - exit LOCK-IN")        
+        short_code == input().lower()
+        
+        
     
     
 
