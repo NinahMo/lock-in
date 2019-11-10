@@ -2,21 +2,22 @@
 #### {This is a simple password locker }, {9 November 2019}
 #### By **{Ronald Mwambia}**
 ## Description
-   This is a python built app that
+   This is a python built app that is based on the saving of passwords.Say you want to save your account credentials for a certain app such as instagram.This system will allow you to store your information no problem.
 
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+* Access a laptop or a Tablet.
+* Gain access to WI-FI or bundles in order to access github
+* Open your browser and follow this link:https://github.com/lorderonnie/lock-in
+* Then access my info by cloning my repository.
+* View my info in atom or visual studio code.
+
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+    So far no bugs found on th file.
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+  PYTHON:The app basically runs on a terminal.The app is built using a Python Module and functions via python commands.
+
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+    Incase of any problem please access my email which is :rontheking45@gmail.com
 ### License
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 Copyright (c) {year} **{List of contributors or company name}**
