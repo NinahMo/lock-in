@@ -29,7 +29,7 @@ def main():
     print("Inorder for you to proceed you need a password.")
     passcode = input()
     
-    print("Welcome {full_name} to LOCK-IN the best password locker around.What is your command? ")
+    print(f"Welcome {full_name} to LOCK-IN the best password locker around.What is your command? ")
     print('\n')
     while True:
         print("Okay to begin using the app you need to first choose your option : ca - create new information for account, da - display existing accounts, ex - exit LOCK-IN")        
@@ -53,11 +53,19 @@ def main():
                 p_value = input()
                 save_password(create_password(a_name,u_name,p_value))
                 
-                print("You have successfully created your account credentials and they have been saved in the system.")
+                print(f"You have successfully created your account credentials {full_name} and they have been saved in the system.")
             
         elif short_code == 'dc':
             if display_passwords():
-                print("Below are the account informatio")
+                print("Below are the various account informations you have created:")
+                
+                for password in display_passwords():
+                    print(f"{password.app_name} {password.user_name} {password.password_number}")
+            
+            else:
+                print{"You have no existing account information."}
+                        
+                
 
 if __name__ == '__main__':
     main()
