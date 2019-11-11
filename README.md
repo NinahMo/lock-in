@@ -15,7 +15,7 @@
    The user is given access to an account creating module.He/she is allowed to create an account and also authenticate it.The app also allows the user to store any information he/she wants to store.
    
 ## Known Bugs
-    So far no bugs found on th file.
+    So far no bugs found on the file.
 ## Technologies Used
   PYTHON:The app basically runs on a terminal.The app is built using a Python Module and functions via python commands.
 

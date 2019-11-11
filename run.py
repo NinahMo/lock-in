@@ -123,7 +123,7 @@ def main():
                         print("Below are the various account informations you have created:")
                         print('\n')
                         for password in display_password():
-                            print(f"This is your account:...{password.app_name} {password.user_name} {password.password_number}")
+                            print(f"This is your account:...app:{password.app_name},name:{password.user_name},passcode:{password.password_number}")
                     
                     else:
                         print('\n')
