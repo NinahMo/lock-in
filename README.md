@@ -12,7 +12,7 @@
 * View my info in atom or visual studio code.
 
 ## BDD(Behaviral Driven Development)
-   
+   The user is given access to an account creating module.He/she is allowed to create an account and also authenticate it.The app also allows the user to store any information he/she wants to store.
    
 ## Known Bugs
     So far no bugs found on th file.

@@ -9,39 +9,54 @@ def create_user(fname,lname,email,passcode):
     new_user = User(fname,lname,email,passcode)
     return new_user
 
-def save_user(user):
+def save_user(User):
     '''
-    this saves your user infomation and also authenticates it.
+    this saves your user infomation and also authenticates it
     '''
-    user.save_user()
+    User.save_user()
 def create_password(aname,uname,pvalue):
     '''
-    this creates a path for you to build your credinti
+    this creates a path for you to build your information
     '''
     new_password = Password(aname,uname,pvalue)
     return new_password
-def save_password(password):
+def save_password(Password):
     '''
     this saves your password credentials in the main
     '''
     password.save_password()
     
-def del_password(password):
+def del_password(Password):
     '''
-    
+    this function allows you to delete information
     '''
     password.delete_password()
     
-def display_contacts():
+def display_password():
     '''
-    
+    this displays all your available contacts
     '''
     return Password.display_passwords()
 
+def authenticate_user(loginname,passcode):
+    '''
+    this prooves one is the user then gives them access to the app
+    '''
+    return User.user_authenticate(loginname,passcode)
+
+def valid_user(full_name,login_name,email,passcode):
+    '''
+    this validates your information and allows you to run
+    '''
+    if full_name=="" or login_name=="" or email=="" or passcode=="" :
+        return False
+    else:
+        return True
+    
 def main():
     print("Welcome to Lock-in.")
     print("This is a python built app that allows you to easily store and delete your password information.")
-    .print('\n')
+    print('\n')
     
     print("PLease enter your full name:")    
     full_name = input()
@@ -99,11 +114,11 @@ def main():
                     print(f"You have successfully created your account credentials {full_name} and they have been saved in the system.")
                     print('\n')
                 elif short_code == 'da':
-                    if display_passwords():
+                    if display_password() !='':
                         print("Below are the various account informations you have created:")
                         print('\n')
-                        for password in display_passwords():
-                            print(f"{password.app_name} {password.user_name} {password.password_number}")
+                        for password in display_password():
+                            print(f"This is your account:...{password.app_name} {password.user_name} {password.password_number}")
                     
                     else:
                         print('\n')
