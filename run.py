@@ -14,24 +14,28 @@ def save_user(User):
     this saves your user infomation and also authenticates it
     '''
     User.save_user()
-def create_password(aname,uname,pvalue):
+def create_password(app_name,user_name,password_number):
     '''
     this creates a path for you to build your information
     '''
-    new_password = Password(aname,uname,pvalue)
+    new_password = Password(app_name,user_name,password_number)
     return new_password
-def save_password(Password):
+def save_password(password):
     '''
     this saves your password credentials in the main
     '''
     password.save_password()
     
-def del_password(Password):
+def del_password(password):
     '''
     this function allows you to delete information
     '''
     password.delete_password()
-    
+def find_by_appname(app_name):
+    '''
+    this allows you to find the specific account
+    '''
+    return Password.find_account_byappname(app_name)   
 def display_password():
     '''
     this displays all your available contacts
@@ -115,7 +119,7 @@ def main():
                     print(f"You have successfully created your account credentials {full_name} and they have been saved in the system.")
                     print('\n')
                 elif short_code == 'da':
-                    if display_password() !='':
+                    if display_password():
                         print("Below are the various account informations you have created:")
                         print('\n')
                         for password in display_password():
@@ -129,9 +133,9 @@ def main():
                 elif short_code == 'del':
                     print("To delete an account please write the name of the app.")
                     del_info = input()
-                    if existing_account(del_info):
-                        del_acc = find_account_byappname(del_info)
-                        delete_password(del_acc)
+                    del_acc = find_by_appname(del_info)
+                    if del_acc.app_name == del_info:
+                        del_acc.delete_password()
                         print('\n')
                         print("you have deleted your information.")
                     else:

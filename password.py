@@ -24,5 +24,13 @@ class Password:
     @classmethod
     def display_passwords(cls):
         return cls.password_list    
-            
+    
+    @classmethod
+    def find_account_byappname(cls,app_name):
+        '''
+        this allows one to find the app name
+        '''
+        for password in cls.password_list:
+            if password.app_name == app_name:
+                return password       
 # pass       
