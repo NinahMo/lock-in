@@ -148,6 +148,7 @@ def main():
 
         else:
             print("Invalid User name please try again.")
+            print('\n')
     else:
         print("Enter your correct details")
                 
