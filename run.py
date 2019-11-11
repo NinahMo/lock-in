@@ -50,19 +50,20 @@ def main():
             custom_code = input().lower()
             
             if custom_code == 'yes':
-                p_value = u_name[:5] + "4211"
-                print("your password will be {p_value} ")
+                p_value = u_name[:5] + "4211"                
+                print(f"your password will be {p_value} ")
+                print('\n')
             else:
                 print("Please enter custom password:")
                 p_value = input()
                 save_password(create_password(a_name,u_name,p_value))
             print('\n')    
             print(f"You have successfully created your account credentials {full_name} and they have been saved in the system.")
-            
-        elif short_code == 'dc':
+            print('\n')
+        elif short_code == 'da':
             if display_passwords():
                 print("Below are the various account informations you have created:")
-                
+                print('\n')
                 for password in display_passwords():
                     print(f"{password.app_name} {password.user_name} {password.password_number}")
             
@@ -76,8 +77,9 @@ def main():
             break
         
         else:
+            print('\n')
             print("Sorry fo the inconvinience but we are unable to read what you have written please try again using the correct short codes.")               
-                
+            print('\n')    
 
 if __name__ == '__main__':
     main()
