@@ -11,6 +11,9 @@
 * Then access my info by cloning my repository.
 * View my info in atom or visual studio code.
 
+## BDD(Behaviral Driven Development)
+   
+   
 ## Known Bugs
     So far no bugs found on th file.
 ## Technologies Used
