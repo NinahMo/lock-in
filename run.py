@@ -70,13 +70,14 @@ def main():
     validAccount = valid_user(full_name,login_name,email,passcode)
     if validAccount:
         save_user(create_user(full_name,login_name,email,passcode))
+        print('\n')
         print(f"{full_name} you have successfully created an account...")
         print('\n')
         
-        print("log in below with your user  login account information")
+        print("login  below with your user account information")
         print('\n')
         
-        print("please enter your full name")
+        print("please enter your user name")
         loginUser = input()
         
         print("enter passcode")
