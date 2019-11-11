@@ -37,7 +37,7 @@ def main():
     while True:
         print("Okay to begin using the app you need to first choose your option : ca - create new information for account, da - display existing accounts, ex - exit LOCK-IN")        
         print('\n')
-        short_code == input().lower()
+        short_code = input().lower()
         
         if short_code == 'ca':
             print("Enter the name of the application:")
@@ -47,17 +47,17 @@ def main():
             u_name = input()
             
             print("Do you want a custom password for your account? yes/no ")
-            short_code == input().lower()
+            custom_code = input().lower()
             
-            if short_code == 'yes':
+            if custom_code == 'yes':
                 p_value = u_name[:5] + "4211"
-                print("your password will be {password} ")
+                print("your password will be {p_value} ")
             else:
                 print("Please enter custom password:")
                 p_value = input()
                 save_password(create_password(a_name,u_name,p_value))
-                
-                print(f"You have successfully created your account credentials {full_name} and they have been saved in the system.")
+            print('\n')    
+            print(f"You have successfully created your account credentials {full_name} and they have been saved in the system.")
             
         elif short_code == 'dc':
             if display_passwords():
@@ -67,6 +67,7 @@ def main():
                     print(f"{password.app_name} {password.user_name} {password.password_number}")
             
             else:
+                print('\n')
                 print("You have no existing account information.")
                 print('\n')
         
